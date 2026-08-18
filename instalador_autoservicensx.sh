@@ -297,7 +297,7 @@ main() {
 
   local work_dir package_file package_dir
   work_dir="$(mktemp -d)"
-  trap 'rm -rf "$work_dir"' EXIT
+  trap "rm -rf '$work_dir'" EXIT
   package_file="$work_dir/autoservicensx-package.tar.gz"
 
   echo "============================================================"
